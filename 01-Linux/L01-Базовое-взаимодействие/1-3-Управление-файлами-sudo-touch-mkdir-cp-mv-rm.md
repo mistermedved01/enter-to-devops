@@ -23,7 +23,7 @@
 
 - [Команды Linux для работы с файлами [losst.pro]](https://losst.pro/komandy-linux-dlya-raboty-s-fajlami)
 
-- [](https://losst.pro/komanda-sudo-v-linux)
+- [Команда sudo [losst.pro]](https://losst.pro/komanda-sudo-v-linux)
 
 - <details>
   <summary><b>sudo</b></summary>
