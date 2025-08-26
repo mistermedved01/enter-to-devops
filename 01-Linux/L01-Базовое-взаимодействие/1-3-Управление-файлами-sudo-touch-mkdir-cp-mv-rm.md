@@ -28,6 +28,8 @@
 - <details>
   <summary><b>sudo</b></summary>
   
+  ---
+
   `sudo -i`
 
   - Запускает **интерактивную оболочку root**, почти как если бы вы вошли под root напрямую.
@@ -95,6 +97,8 @@
 
 - <details>
   <summary><b>touch-mkdir-cp-mv-rm</b></summary>
+    
+    ---
 
     **1. СОЗДАНИЕ (touch, mkdir)**
 
