@@ -26,6 +26,12 @@
 
 - [2-2-Основы-сетей-ip-адресация](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-2-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-ip-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%D1%86%D0%B8%D1%8F.md)
 
+- [2-3-Основы-сетей-маршрутизация](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-3-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md)
+
+- [2-4-Основы-сетей-dhcp-dns-nat](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-4-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-dhcp-dns-nat.md)
+
+- [2-5-Основы-сетей-vpn-proxy](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-vpn-proxy.md)
+
 ---
 
 05-Виртуализация
