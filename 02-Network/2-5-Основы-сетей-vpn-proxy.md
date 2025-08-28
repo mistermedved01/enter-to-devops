@@ -6,8 +6,6 @@
 
 ---
 
-## 2-5-Основы-сетей-vpn-proxy
-
 <details>
 <summary>📜<b>Proxy (forward, reverse, load balancing)</b></summary>
 
