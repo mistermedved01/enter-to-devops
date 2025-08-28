@@ -1,4 +1,4 @@
-# :rocket: enter-to-devops
+# :rocket:enter-to-devops
 
 ## Модули:
 
