@@ -22,15 +22,15 @@
 
 **02-Network**
 
-- [2-1-Сетевые-модели-OSI-TCP-IP-UDP](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-1-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-osi-tcp-ip-udp.md)
+- [2-1-Сетевые-модели-OSI-TCP-IP-UDP](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-1-%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D1%8B%D0%B5-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-OSI-TCP-IP-UDP.md)
 
-- [2-2-IP-адресация-и-подсети](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-2-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-ip-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%D1%86%D0%B8%D1%8F.md)
+- [2-2-IP-адресация-и-подсети](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-2-IP-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D0%BF%D0%BE%D0%B4%D1%81%D0%B5%D1%82%D0%B8.md)
 
-- [2-3-Маршрутизация-и-шлюз](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-3-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F.md)
+- [2-3-Маршрутизация-и-шлюз](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-3-%D0%9C%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D1%88%D0%BB%D1%8E%D0%B7.md)
 
-- [2-4-DHCP-DNS-и-NAT](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-4-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-dhcp-dns-nat.md)
+- [2-4-DHCP-DNS-и-NAT](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-4-DHCP-DNS-%D0%B8-NAT.md)
 
-- [2-5-VPN-и-Proxy](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-5-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%81%D0%B5%D1%82%D0%B5%D0%B9-vpn-proxy.md)
+- [2-5-VPN-и-Proxy](https://github.com/mistermedved01/enter-to-devops/blob/master/02-Network/2-5-VPN-%D0%B8-Proxy.md)
 
 ---
 
@@ -40,14 +40,14 @@
 
 ---
 
-06-Автоматизация
+Автоматизация
 
-07-Мониторинг
+Мониторинг
 
-08-Отказоустойчивось
+Отказоустойчивось
 
-09-Базы данных
+Базы данных
 
-10-Система управления версиями
+Система управления версиями
 
-11-Виртуализация и контейнеризация
+Виртуализация и контейнеризация
