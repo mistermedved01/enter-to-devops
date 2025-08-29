@@ -278,4 +278,6 @@ journalctl -u nginx.service | grep "fail" ## Ищет ошибки в логах
 
 </details>
 
-✍️**Задания:**
+---
+
+✍️**Вопросы**
