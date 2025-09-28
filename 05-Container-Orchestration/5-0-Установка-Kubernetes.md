@@ -5,7 +5,14 @@
 **Выполнять в указанном порядке:**
 
 ### На Master Node:
-1️⃣ Выполняем `sudo bash 01_k8s_master_install.sh`
+1️⃣ Выполняем:
+
+```bash
+curl -O https://raw.githubusercontent.com/mistermedved01/enter-to-devops/master/05-Container-Orchestration/scrips/01_k8s_master_install.sh
+sudo chown +x 01_k8s_master_install.sh
+sudo bash 01_k8s_master_install.sh
+```
+
 
 2️⃣ При успешной установке компонентов k8s и инициализации ноды, как Master Node, мы должны получить строку для последующих подключений Worker Node:
 
@@ -96,7 +103,13 @@ kubectl describe node master-node
 ---
 
 ### На Worker Node:
-3️⃣ Выполняем `sudo bash 02_k8s_worker_install.sh`
+3️⃣ Выполняем 
+
+```bash
+curl -O https://raw.githubusercontent.com/mistermedved01/enter-to-devops/master/05-Container-Orchestration/scrips/02_k8s_worker_install.sh
+sudo chown +x 02_k8s_worker_install.sh
+sudo bash 02_k8s_worker_install.sh
+```
 
 4️⃣ Дожидаемся успешной установки компонентов. Подключаем Worker Node к Master Node по токену из пункта 2.
 
@@ -132,7 +145,13 @@ worker-node  Ready    <none>          2m    v1.28.2
 ---
 
 ### На Master Node:
-5️⃣ Выполяем `sudo bash 03_k8s_master_dashboard.sh`
+5️⃣ Выполяем 
+
+```bash
+curl -O https://raw.githubusercontent.com/mistermedved01/enter-to-devops/master/05-Container-Orchestration/scrips/03_k8s_master_dashboard.sh
+sudo chown +x 03_k8s_master_dashboard.sh
+sudo bash 03_k8s_master_dashboard.sh
+```
 
 6️⃣ Токен для авторизации в дашборде доступен в лог-файле.
 

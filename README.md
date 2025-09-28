@@ -40,6 +40,20 @@
 
 ---
 
+**05-Container-Orchestration**
+
+- [🔨5-0-Установка-Kubernetes](https://github.com/mistermedved01/enter-to-devops/blob/master/05-Container-Orchestration/5-0-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Kubernetes.md)
+
+- [📚5-1-Архитектура-Kubernetes](https://github.com/mistermedved01/enter-to-devops/blob/master/05-Container-Orchestration/5-1-%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0-Kubernetes.md)
+
+- [🌱5-2-Основные-ресурсы-Pods](https://github.com/mistermedved01/enter-to-devops/blob/master/05-Container-Orchestration/5-2-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B-Pods.md)
+
+- [🔹5-3-Основные-ресурсы-ReplicaSet](https://github.com/mistermedved01/enter-to-devops/blob/master/05-Container-Orchestration/5-3-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B-ReplicaSet.md)
+
+- [🚀5-4-Основные-ресурсы-Deployment](https://github.com/mistermedved01/enter-to-devops/blob/master/05-Container-Orchestration/5-4-%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%8B-Deployments.md)
+
+---
+
 Автоматизация
 
 Мониторинг
