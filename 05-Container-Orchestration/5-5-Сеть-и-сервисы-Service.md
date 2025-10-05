@@ -266,32 +266,24 @@ curl http://<node-ip>:<node-port>
 ---
 
 ### 1. Внутренняя коммуникация
-```mermaid
-flowchart TD
-    A[Frontend Pod] --> B[Frontend Service]
-    B --> C[Backend Pod 1]
-    B --> D[Backend Pod 2]
-    B --> E[Backend Pod 3]
-```
+
+<img src="img/mermaid-diagram-01.png" alt="" width="500">
+
 - **ClusterIP** для связи между микросервисами
 - Балансировка нагрузки между репликами
 
+
 ### 2. Внешний доступ к приложению
-```mermaid
-flowchart TD
-    A[Пользователь] --> B[NodePort/LoadBalancer]
-    B --> C[App Pod 1]
-    B --> D[App Pod 2]
-```
+
+<img src="img/mermaid-diagram-02.png" alt="" width="500">
+
 - **NodePort** для разработки/тестирования
 - **LoadBalancer** для продакшена в облаке
 
 ### 3. Интеграция с внешними системами
-```mermaid
-flowchart LR
-    A[App Pod] --> B[ExternalName Service]
-    B --> C[Внешняя БД]
-```
+
+<img src="img/mermaid-diagram-03.png" alt="" width="500">
+
 - **ExternalName** для постепенной миграции
 - **Service без селектора** для гибридных сред
 
