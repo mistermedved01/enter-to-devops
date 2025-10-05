@@ -220,7 +220,7 @@ kubectl set image deployment/nginx-deployment nginx=nginx:1.91
 ```
 
 ### Проверка состояния
-``bash
+```bash
 kubectl rollout status deployments nginx-deployment
 kubectl get rs
 kubectl get pods
@@ -236,6 +236,7 @@ nginx-deployment-3066724191-08mng   0/1       ImagePullBackOff   0          6s
 ```bash
 kubectl rollout undo deployment/nginx-deployment --to-revision=2
 ```
+
 ---
 
 </details>
