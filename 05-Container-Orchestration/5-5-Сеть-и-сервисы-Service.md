@@ -110,6 +110,8 @@ ports:
   targetPort: 9377
 ```
 
+---
+
 </details>
 
 <details>
@@ -263,9 +265,9 @@ curl http://<node-ip>:<node-port>
 
 ---
 
-## 1. Внутренняя коммуникация
+### 1. Внутренняя коммуникация
 ```mermaid
-graph TD
+flowchart TD
     A[Frontend Pod] --> B[Frontend Service]
     B --> C[Backend Pod 1]
     B --> D[Backend Pod 2]
@@ -274,9 +276,9 @@ graph TD
 - **ClusterIP** для связи между микросервисами
 - Балансировка нагрузки между репликами
 
-## 2. Внешний доступ к приложению
+### 2. Внешний доступ к приложению
 ```mermaid
-graph LR
+flowchart LR
     A[Пользователь] --> B[NodePort/LoadBalancer]
     B --> C[App Pod 1]
     B --> D[App Pod 2]
@@ -284,9 +286,9 @@ graph LR
 - **NodePort** для разработки/тестирования
 - **LoadBalancer** для продакшена в облаке
 
-## 3. Интеграция с внешними системами
+### 3. Интеграция с внешними системами
 ```mermaid
-graph LR
+flowchart LR
     A[App Pod] --> B[ExternalName Service]
     B --> C[Внешняя БД]
 ```
