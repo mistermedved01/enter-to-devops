@@ -278,7 +278,7 @@ flowchart TD
 
 ### 2. Внешний доступ к приложению
 ```mermaid
-flowchart LR
+flowchart TD
     A[Пользователь] --> B[NodePort/LoadBalancer]
     B --> C[App Pod 1]
     B --> D[App Pod 2]
