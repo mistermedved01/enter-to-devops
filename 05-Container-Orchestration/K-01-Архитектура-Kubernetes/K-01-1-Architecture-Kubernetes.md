@@ -94,21 +94,21 @@
 ### 🏷️Организация и идентификация
 
 #### Labels and Selectors
-+++yaml
+```yaml
 metadata:
   labels:
     app: frontend
     tier: web
----yaml
+```
 
 - **Пары ключ/значение** для идентификации объектов
 - **Селекторы** для поиска и группировки
 
 #### Namespaces
-+++bash
+```bash
 kubectl create namespace development
 kubectl get pods -n development
----bash
+```
 
 - **Виртуальные кластеры** в физическом кластере
 - Изоляция сред (dev/staging/prod)
@@ -124,12 +124,12 @@ kubectl get pods -n development
 - Постоянный IP и DNS-имя
 
 #### Annotations
-+++yaml
+```yaml
 metadata:
   annotations:
     description: "Production database"
     version: "2.1"
----yaml
+```
 
 - **Произвольные метаданные**
 - Информация для инструментов
@@ -141,7 +141,7 @@ metadata:
 - Переопределение параметров
 
 #### Secrets
-+++yaml
+```yaml
 apiVersion: v1
 kind: Secret
 metadata:
@@ -149,7 +149,7 @@ metadata:
 type: Opaque
 data:
   password: cGFzc3dvcmQ=
----yaml
+```
 
 - **Хранение конфиденциальной информации**
 - Пароли, токены, SSH-ключи
@@ -166,7 +166,7 @@ data:
 
 ### Основные команды kubectl
 
-+++bash
+```bash
 # Просмотр ресурсов
 kubectl get pods
 kubectl get deployments
@@ -184,7 +184,7 @@ kubectl rollout status deployment/backend
 kubectl describe pod frontend-pod
 kubectl logs frontend-pod
 kubectl exec -it frontend-pod -- /bin/bash
----bash
+```
 
 ---
 
@@ -197,7 +197,7 @@ kubectl exec -it frontend-pod -- /bin/bash
 
 Вместо последовательности команд описываем **желаемое состояние**:
 
-+++yaml
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -217,7 +217,7 @@ spec:
         image: nginx:1.20
         ports:
         - containerPort: 80
----yaml
+```
 
 Kubernetes сам приведет текущее состояние к желаемому.
 
@@ -318,11 +318,11 @@ text
 > 💡**Совет:** Не пытайтесь запомнить все сразу! Начинайте с Pods → Deployments → Services, остальное придет с практикой.
 
 > 🎯 **Практический совет:** При отладке проблем всегда начинайте с:
-+++bash
+```bash
 kubectl get nodes          # Проверить состояние нод
 kubectl get pods -A        # Общий обзор всех Pod'ов
 kubectl describe pod <pod-name>  # Детальная информация о Pod'е
----bash
+```
 
 </details>
 
