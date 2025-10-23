@@ -149,12 +149,3 @@ kubectl describe pod <pod-name> -n <namespace>
 # Проверка событий
 kubectl get events --sort-by=.metadata.creationTimestamp
 ```
-
-## Следующие шаги
-
-После успешной установки кластера можно переходить к изучению:
-- Архитектуры Kubernetes
-- Компонентов кластера
-- Ресурсов и контроллеров
-- Сервисов и сетей
-- Управления через kubectl
