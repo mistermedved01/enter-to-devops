@@ -48,7 +48,7 @@ Node: 192.168.1.2        Laptop: 192.168.1.10
 
 ## Три основных типа Services
 
-+кod
+```bash
 # 1. ClusterIP (по умолчанию)
 # Виртуальный IP для внутренней коммуникации
 Frontend → ClusterIP:8080 → Backend Pods
@@ -279,7 +279,7 @@ kubernetes    ClusterIP  10.96.0.1       <none>        443/TCP        1d
 
 ## Тестирование доступа
 
-+кod
+```bash
 # Доступ через любой узел кластера
 curl http://192.168.1.2:30008
 curl http://192.168.1.3:30008

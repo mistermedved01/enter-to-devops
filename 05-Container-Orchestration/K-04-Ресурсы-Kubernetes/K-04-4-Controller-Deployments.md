@@ -107,7 +107,7 @@ strategy:
 [Pod A-v1] [Pod B-v2] [Pod C-v2]    # Шаг 2: Обновлен второй Pod
     ↓
 [Pod A-v2] [Pod B-v2] [Pod C-v2]    # Шаг 3: Все Pod'ы обновлены
--кod
+```
 
 - **`maxUnavailable`** - максимальное количество недоступных Pod'ов (по умолчанию 25%)
 - **`maxSurge`** - максимальное количество Pod'ов сверх желаемого (по умолчанию 25%)
@@ -146,7 +146,7 @@ kubectl rollout status deployment/nginx-deployment
 ```
 
 **Пример вывода get deployments:**
-+кod
+```bash
 NAME               DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 nginx-deployment   3         3         3            3           18s
 ```
@@ -158,7 +158,7 @@ nginx-deployment   3         3         3            3           18s
 
 ### Просмотр связанных объектов
 
-+кod
+```bash
 # Связанные ReplicaSet
 kubectl get rs
 

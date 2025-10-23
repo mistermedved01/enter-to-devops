@@ -53,7 +53,7 @@ mysql Service (ClusterIP: 10.96.105.47)    → MySQL Pods
 
 ## Как работает ClusterIP
 
-+кod
+```bash
 # ClusterIP = виртуальный IP + балансировщик нагрузки
 Service: back-end (10.96.105.45:80)
         ↓
@@ -162,7 +162,7 @@ spec:
   ports:
   - port: 80
     targetPort: 8080
--кod
+```
 
 ## Расширенные селекторы
 
@@ -223,7 +223,7 @@ spec:
       value: "http://back-end:80"    # ← Используем имя сервиса!
 ```
 
-+кod
+```bash
 # Backend Pod подключается к Redis Service
 apiVersion: v1
 kind: Pod
@@ -290,7 +290,7 @@ curl http://10.96.105.45
 
 # Проверить DNS разрешение
 nslookup back-end
--кod
+```
 
 ---
 
@@ -303,7 +303,7 @@ nslookup back-end
 
 ## Множественные порты
 
-+кod
+```bash
 # Service с несколькими портами
 apiVersion: v1
 kind: Service

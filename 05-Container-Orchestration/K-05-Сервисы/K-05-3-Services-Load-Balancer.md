@@ -46,7 +46,7 @@ Node4: 192.168.1.73:30008   ← И еще одна...
 
 ## Как работает LoadBalancer
 
-+кod
+```bash
 # LoadBalancer = облачный балансировщик + автоматическая настройка
 Internet
     ↓
@@ -172,7 +172,7 @@ spec:
 
 ## Создание и мониторинг
 
-+кod
+```bash
 # Создать LoadBalancer Service
 kubectl apply -f service-loadbalancer.yaml
 

@@ -146,7 +146,7 @@ kubectl apply -f k8s/
 
 ## Порядок обработки
 
-+кod
+```text
 # Kubernetes автоматически определяет порядок:
 1. Namespaces
 2. Custom Resource Definitions (CRDs)  

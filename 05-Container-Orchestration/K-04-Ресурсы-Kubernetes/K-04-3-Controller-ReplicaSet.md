@@ -253,7 +253,7 @@ spec:
 ```
 
 **Применение:**
-+кod
+```bash
 kubectl create -f hpa-rs.yaml
 ```
 

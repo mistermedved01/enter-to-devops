@@ -174,24 +174,24 @@ servicename        → Имя Kubernetes Service (например: frontend, ap
 ```
 # Пример 1: Сервис в development namespace
 frontend.development.svc.cluster.local
-│         │           │   │     │
-│         │           │   │     └── Домен кластера по умолчанию
-│         │           │   └──────── Суффикс для всех сервисов
-│         │           └──────────── Namespace "development"
-│         └─────────────────────── Имя сервиса "frontend"
+│         │           │   │     
+│         │           │   └── Домен кластера по умолчанию
+│         │           └──────── Суффикс для всех сервисов
+│         └──────────── Namespace "development"
+└─────────────────────── Имя сервиса "frontend"
 
 # Пример 2: Сервис в production namespace  
 api.production.svc.cluster.local
-│   │           │   │     │
-│   │           │   │     └── Домен кластера
-│   │           │   └──────── Суффикс сервиса
-│   │           └──────────── Namespace "production"
-│   └─────────────────────── Имя сервиса "api"
+│   │           │   │     
+│   │           │   └── Домен кластера
+│   │           └──────── Суффикс сервиса
+│   └──────────── Namespace "production"
+└─────────────────────── Имя сервиса "api"
 ```
 
 ## Сокращенные формы обращения
 
-+кod
+```bash
 # Внутри одного namespace (автоматическое разрешение):
 frontend          → frontend.development.svc.cluster.local
 

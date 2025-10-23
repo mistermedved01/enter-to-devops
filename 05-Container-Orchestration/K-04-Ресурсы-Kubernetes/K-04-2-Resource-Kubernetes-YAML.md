@@ -117,7 +117,7 @@ metadata:
 name: myapp-pod         # ← Должен быть отступ!
 labels:
 app: myapp              # ← Должен быть отступ!
--кod
+```
 
 ## Структура данных в YAML
 
