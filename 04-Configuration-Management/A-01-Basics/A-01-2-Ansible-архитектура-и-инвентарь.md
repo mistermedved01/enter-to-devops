@@ -14,7 +14,7 @@
 
 ### Компоненты системы
 
-+++text
+```text
 # Полная архитектура Ansible
 ┌─────────────────────────────────────────────────┐
 │               Control Node                       │
@@ -38,11 +38,11 @@
 │ • Python    │  │ • Python    │  │ • Python    │
 │ • SSH       │  │ • SSH       │  │ • SSH       │
 └─────────────┘  └─────────────┘  └─────────────┘
----text
+```
 
 ### Процесс выполнения playbook
 
-+++text
+```text
 # Workflow выполнения:
 1. 📋 Парсинг Inventory - загрузка хостов и групп
 2. 🔍 Сбор Facts - информация о каждом managed node
@@ -56,11 +56,11 @@
 • Выполнение модуля
 • Удаление временных файлов
 • Возврат JSON результата
----text
+```
 
 ### Модель выполнения
 
-+++text
+```text
 # Push vs Pull модели
 ┌─────────────────┬─────────────────┐
 │   Push Model    │   Pull Model    │
@@ -79,7 +79,7 @@
 │   доступности   │ ❌ Сложнее      │
 │   Control Node  │   отладка       │
 └─────────────────┴─────────────────┘
----text
+```
 
 ---
 
@@ -92,7 +92,7 @@
 
 ### Базовый синтаксис INI
 
-+++text
+```text
 # Простой inventory файл (INI формат)
 [web_servers]
 web1.example.com
@@ -109,7 +109,7 @@ db_servers
 [production:vars]
 ansible_user=ubuntu
 ansible_ssh_private_key_file=~/.ssh/production_key
----text
+```
 
 ### YAML формат инвентаря
 
@@ -150,7 +150,7 @@ all:
 
 ### Группы и переменные
 
-+++text
+```text
 # Иерархия групп
 [production:children]
 web_servers
@@ -166,7 +166,7 @@ staging_db
 2. Группы (group_vars/web_servers.yml)
 3. Хосты (host_vars/host1.yml)
 4. В inventory файле
----text
+```
 
 ---
 
@@ -179,7 +179,7 @@ staging_db
 
 ### Концепция динамического инвентаря
 
-+++text
+```text
 # Динамический инвентарь - скрипт, возвращающий JSON
 ┌─────────────────┐    JSON     ┌─────────────────┐
 │   Cloud API     │ ──────────→ │  Ansible        │
@@ -191,7 +191,7 @@ staging_db
 │   Database      │             │   File System   │
 │   (MySQL)       │             │   (CSV, YAML)   │
 └─────────────────┘             └─────────────────┘
----text
+```
 
 ### AWS EC2 динамический инвентарь
 
@@ -264,7 +264,7 @@ if __name__ == "__main__":
 
 ### Иерархия переменных
 
-+++text
+```text
 # Приоритет переменных (от высшего к низшему):
 1. Command line variables (-e)
 2. Playbook variables (vars:)
@@ -284,7 +284,7 @@ inventory/
 └── host_vars/
     ├── web1.yml
     └── db1.yml
----text
+```
 
 ### Переменные в playbook
 
@@ -334,7 +334,7 @@ ansible host1 -m debug -a "var=ansible_distribution"
 
 ### Многоуровневая структура
 
-+++text
+```text
 # Сложная структура инвентаря
 inventory/
 ├── production/
@@ -353,7 +353,7 @@ inventory/
 # Использование:
 ansible-playbook -i inventory/production/hosts playbook.yml
 ansible-playbook -i inventory/staging/hosts playbook.yml
----text
+```
 
 ### Переменные окружений
 
@@ -382,7 +382,7 @@ log_level: info
 
 ### Инвентарь для разных облаков
 
-+++text
+```text
 # Мульти-облачная структура
 inventory/
 ├── aws/
@@ -398,7 +398,7 @@ inventory/
 # Запуск для разных облаков:
 ansible-playbook -i inventory/aws/aws_ec2.py playbook.yml
 ansible-playbook -i inventory/gcp/gcp_compute.py playbook.yml
----text
+```
 
 ---
 
@@ -411,22 +411,22 @@ ansible-playbook -i inventory/gcp/gcp_compute.py playbook.yml
 
 ### Best Practices инвентаря
 
-+++text
+```text
 ✅ Используйте YAML формат для сложных структур
 ✅ Организуйте переменные по уровням
 ✅ Применяйте динамический инвентарь для облаков
 ✅ Документируйте структуру инвентаря
 ✅ Используйте группы для логической организации
 ✅ Кэшируйте динамический инвентарь
----text
+```
 
 ### Что изучаем дальше
 
-+++text
+```text
 📚 Следующая тема: Ad-Hoc команды
 🎯 Практика: Быстрые операции без playbook
 🔧 Инструменты: Модули для повседневных задач
----text
+```
 
 ---
 
