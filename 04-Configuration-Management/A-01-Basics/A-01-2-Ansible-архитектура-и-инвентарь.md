@@ -113,7 +113,7 @@ ansible_ssh_private_key_file=~/.ssh/production_key
 
 ### YAML формат инвентаря
 
-+++yaml
+```yaml
 # inventory/hosts.yml
 all:
   children:
@@ -146,7 +146,7 @@ all:
       vars:
         environment: production
         timezone: Europe/Moscow
----yaml
+```
 
 ### Группы и переменные
 
@@ -214,7 +214,7 @@ ansible-playbook -i aws_ec2.py --cache playbook.yml
 
 ### Создание собственного динамического инвентаря
 
-+++python
+```python
 #!/usr/bin/env python3
 # custom_inventory.py
 
@@ -251,7 +251,7 @@ def get_inventory():
 
 if __name__ == "__main__":
     print(json.dumps(get_inventory(), indent=2))
----python
+```
 
 ---
 
@@ -288,7 +288,7 @@ inventory/
 
 ### Переменные в playbook
 
-+++yaml
+```yaml
 ---
 - name: Configure web servers
   hosts: web_servers
@@ -308,7 +308,7 @@ inventory/
         name: "{{ web_package }}"
         state: started
         enabled: yes
----yaml
+```
 
 ### Факты и переменные
 
@@ -357,7 +357,7 @@ ansible-playbook -i inventory/staging/hosts playbook.yml
 
 ### Переменные окружений
 
-+++yaml
+```yaml
 # group_vars/all.yml
 ---
 # Глобальные переменные
@@ -378,7 +378,7 @@ log_level: error
 environment: staging
 debug: true
 log_level: info
----yaml
+```
 
 ### Инвентарь для разных облаков
 

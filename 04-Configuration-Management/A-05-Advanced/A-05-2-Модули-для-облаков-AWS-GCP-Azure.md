@@ -29,7 +29,7 @@
 
 ### AWS модули
 
-+++yaml
+```yaml
 ---
 - name: Create EC2 instance
   hosts: localhost
@@ -43,7 +43,7 @@
         security_groups: ['web-sg']
         region: us-east-1
       register: ec2_result
----yaml
+```
 
 ---
 

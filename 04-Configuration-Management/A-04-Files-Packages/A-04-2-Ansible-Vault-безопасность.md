@@ -64,7 +64,7 @@ ansible-vault encrypt secrets.yml
 
 ### Создание файла секретов
 
-+++yaml
+```yaml
 # secrets.yml (зашифрованный)
 ---
 database_password: "super_secret_password"
@@ -77,11 +77,11 @@ ssl_certificate: |
   -----BEGIN CERTIFICATE-----
   MIIDXTCCAkWgAwIBAgIJAKoK/Ovj8W...
   -----END CERTIFICATE-----
----yaml
+```
 
 ### Использование в playbook
 
-+++yaml
+```yaml
 ---
 - name: Deploy application with secrets
   hosts: all
@@ -95,7 +95,7 @@ ssl_certificate: |
         dest: /etc/app/database.conf
       vars:
         db_password: "{{ database_password }}"
----yaml
+```
 
 ---
 

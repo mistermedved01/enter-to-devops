@@ -30,7 +30,7 @@
 
 ### Модуль template
 
-+++yaml
+```yaml
 # Базовое использование модуля template
 - name: Generate nginx configuration
   template:
@@ -41,7 +41,7 @@
     group: root
     mode: '0644'
   notify: restart nginx
----yaml
+```
 
 ### Когда использовать шаблоны
 

@@ -66,7 +66,7 @@
 
 ### Основы YAML
 
-+++yaml
+```yaml
 # Простой YAML файл
 ---
 - name: Install and start nginx
@@ -84,11 +84,11 @@
         name: nginx
         state: started
         enabled: yes
----yaml
+```
 
 ### Структура Playbook
 
-+++yaml
+```yaml
 ---
 # Playbook начинается с ---
 - name: "Описание play"           # Название play
@@ -106,11 +106,11 @@
     - name: "Описание handler"
       module_name:
         parameter: value
----yaml
+```
 
 ### Отступы и форматирование
 
-+++yaml
+```yaml
 # Правильные отступы (2 пробела)
 - name: Configure web server
   hosts: web_servers
@@ -125,7 +125,7 @@
         src: nginx.conf.j2
         dest: /etc/nginx/nginx.conf
       notify: restart nginx
----yaml
+```
 
 ---
 
@@ -138,7 +138,7 @@
 
 ### Базовый Playbook
 
-+++yaml
+```yaml
 # playbooks/install_nginx.yml
 ---
 - name: Install and configure nginx
@@ -169,7 +169,7 @@
         mode: '0755'
         owner: www-data
         group: www-data
----yaml
+```
 
 ### Выполнение Playbook
 
@@ -198,7 +198,7 @@ ansible-playbook -v playbooks/install_nginx.yml
 
 ### Компоненты задачи
 
-+++yaml
+```yaml
 - name: "Человекочитаемое описание задачи"
   module_name:                    # Модуль Ansible
     parameter1: value1            # Параметры модуля
@@ -209,11 +209,11 @@ ansible-playbook -v playbooks/install_nginx.yml
   tags:                          # Теги для фильтрации
     - tag1
     - tag2
----yaml
+```
 
 ### Популярные модули
 
-+++yaml
+```yaml
 # Управление пакетами
 - name: Install package
   package:
@@ -240,7 +240,7 @@ ansible-playbook -v playbooks/install_nginx.yml
     src: local_file.txt
     dest: /remote/path/file.txt
     mode: '0644'
----yaml
+```
 
 ---
 

@@ -76,7 +76,7 @@ mkdir -p roles/nginx/{defaults,files,handlers,meta,tasks,templates,tests,vars}
 
 ### Основные файлы роли
 
-+++yaml
+```yaml
 # roles/nginx/tasks/main.yml
 ---
 - name: Install nginx
@@ -95,16 +95,16 @@ mkdir -p roles/nginx/{defaults,files,handlers,meta,tasks,templates,tests,vars}
     name: nginx
     state: started
     enabled: yes
----yaml
+```
 
-+++yaml
+```yaml
 # roles/nginx/defaults/main.yml
 ---
 # Переменные по умолчанию
 nginx_port: 80
 nginx_user: www-data
 document_root: /var/www/html
----yaml
+```
 
 ---
 

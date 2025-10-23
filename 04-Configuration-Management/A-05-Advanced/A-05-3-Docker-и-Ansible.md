@@ -29,7 +29,7 @@
 
 ### Docker модули
 
-+++yaml
+```yaml
 ---
 - name: Docker management
   hosts: all
@@ -58,7 +58,7 @@
         ports:
           - "80:80"
         state: started
----yaml
+```
 
 ---
 
