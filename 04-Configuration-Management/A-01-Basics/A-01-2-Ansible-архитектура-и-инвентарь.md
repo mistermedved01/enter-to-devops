@@ -195,7 +195,7 @@ staging_db
 
 ### AWS EC2 динамический инвентарь
 
-+++bash
+```bash
 #!/bin/bash
 # aws_ec2.py - скрипт для AWS EC2
 
@@ -210,7 +210,7 @@ ansible-playbook -i aws_ec2.py playbook.yml
 
 # С кэшированием
 ansible-playbook -i aws_ec2.py --cache playbook.yml
----bash
+```
 
 ### Создание собственного динамического инвентаря
 
@@ -312,7 +312,7 @@ inventory/
 
 ### Факты и переменные
 
-+++bash
+```bash
 # Просмотр всех фактов хоста
 ansible host1 -m setup
 
@@ -321,7 +321,7 @@ ansible host1 -m setup -a "filter=ansible_distribution*"
 
 # Использование фактов в playbook
 ansible host1 -m debug -a "var=ansible_distribution"
----bash
+```
 
 ---
 

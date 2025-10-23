@@ -173,7 +173,7 @@
 
 ### Выполнение Playbook
 
-+++bash
+```bash
 # Запуск playbook
 ansible-playbook playbooks/install_nginx.yml
 
@@ -185,7 +185,7 @@ ansible-playbook --check playbooks/install_nginx.yml
 
 # Запуск с verbose выводом
 ansible-playbook -v playbooks/install_nginx.yml
----bash
+```
 
 ---
 
@@ -253,7 +253,7 @@ ansible-playbook -v playbooks/install_nginx.yml
 
 ### Опции выполнения
 
-+++bash
+```bash
 # Базовое выполнение
 ansible-playbook playbook.yml
 
@@ -267,11 +267,11 @@ ansible-playbook --check --diff playbook.yml
 ansible-playbook -v playbook.yml
 ansible-playbook -vv playbook.yml
 ansible-playbook -vvv playbook.yml
----bash
+```
 
 ### Ограничение выполнения
 
-+++bash
+```bash
 # Выполнение на конкретных хостах
 ansible-playbook -l web_servers playbook.yml
 
@@ -283,11 +283,11 @@ ansible-playbook --skip-tags "debug" playbook.yml
 
 # Начать с определенной задачи
 ansible-playbook --start-at-task "Install nginx" playbook.yml
----bash
+```
 
 ### Отладка проблем
 
-+++bash
+```bash
 # Проверка синтаксиса
 ansible-playbook --syntax-check playbook.yml
 
@@ -299,7 +299,7 @@ ansible-playbook -l web1 playbook.yml
 
 # Выполнение с максимальной детализацией
 ansible-playbook -vvvv playbook.yml
----bash
+```
 
 ---
 

@@ -36,7 +36,7 @@
 
 ### Базовые команды Vault
 
-+++bash
+```bash
 # Создание зашифрованного файла
 ansible-vault create secrets.yml
 
@@ -51,7 +51,7 @@ ansible-vault decrypt secrets.yml
 
 # Шифрование существующего файла
 ansible-vault encrypt secrets.yml
----bash
+```
 
 ---
 

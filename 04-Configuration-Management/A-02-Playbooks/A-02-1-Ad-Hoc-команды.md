@@ -76,7 +76,7 @@ ansible [pattern] -m [module] -a "[module arguments]"
 
 ### Модуль ping
 
-+++bash
+```bash
 # Проверка подключения
 ansible all -m ping
 
@@ -88,11 +88,11 @@ ansible all -m ping -v
 
 # Ping с указанием пользователя
 ansible all -m ping -u ubuntu
----bash
+```
 
 ### Модуль command
 
-+++bash
+```bash
 # Выполнение произвольных команд
 ansible all -m command -a "uptime"
 
@@ -104,11 +104,11 @@ ansible all -m command -a "df -h"
 
 # Проверка памяти
 ansible all -m command -a "free -h"
----bash
+```
 
 ### Модуль setup (факты)
 
-+++bash
+```bash
 # Сбор всех фактов
 ansible all -m setup
 
@@ -120,7 +120,7 @@ ansible all -m setup -a "filter=ansible_memory*"
 
 # Факты в JSON формате
 ansible all -m setup | jq '.ansible_facts'
----bash
+```
 
 ---
 
@@ -133,7 +133,7 @@ ansible all -m setup | jq '.ansible_facts'
 
 ### Модуль package
 
-+++bash
+```bash
 # Установка пакета (автоопределение менеджера)
 ansible all -m package -a "name=nginx state=present"
 
@@ -142,11 +142,11 @@ ansible all -m package -a "name=apache2 state=absent"
 
 # Обновление всех пакетов
 ansible all -m package -a "name=* state=latest"
----bash
+```
 
 ### Специфичные модули пакетов
 
-+++bash
+```bash
 # APT (Ubuntu/Debian)
 ansible all -m apt -a "name=nginx state=present update_cache=yes"
 
@@ -158,17 +158,17 @@ ansible all -m dnf -a "name=nginx state=present"
 
 # Homebrew (macOS)
 ansible all -m homebrew -a "name=git state=present"
----bash
+```
 
 ### Управление репозиториями
 
-+++bash
+```bash
 # Добавление репозитория (Ubuntu)
 ansible all -m apt_repository -a "repo='deb http://nginx.org/packages/ubuntu/ focal nginx' state=present"
 
 # Установка ключей репозитория
 ansible all -m apt_key -a "url=https://nginx.org/keys/nginx_signing.key state=present"
----bash
+```
 
 ---
 
@@ -181,7 +181,7 @@ ansible all -m apt_key -a "url=https://nginx.org/keys/nginx_signing.key state=pr
 
 ### Модуль service
 
-+++bash
+```bash
 # Запуск сервиса
 ansible all -m service -a "name=nginx state=started"
 
@@ -196,11 +196,11 @@ ansible all -m service -a "name=nginx enabled=yes"
 
 # Отключение автозапуска
 ansible all -m service -a "name=nginx enabled=no"
----bash
+```
 
 ### Проверка статуса сервисов
 
-+++bash
+```bash
 # Статус всех сервисов
 ansible all -m command -a "systemctl status nginx"
 
@@ -209,7 +209,7 @@ ansible all -m command -a "systemctl list-units --type=service --state=active"
 
 # Проверка конкретного сервиса
 ansible all -m service -a "name=nginx" --check
----bash
+```
 
 ---
 
@@ -222,7 +222,7 @@ ansible all -m service -a "name=nginx" --check
 
 ### Модуль file
 
-+++bash
+```bash
 # Создание директории
 ansible all -m file -a "path=/tmp/test state=directory"
 
@@ -237,11 +237,11 @@ ansible all -m file -a "path=/tmp/test.txt owner=ubuntu group=ubuntu"
 
 # Создание символической ссылки
 ansible all -m file -a "src=/etc/nginx/nginx.conf dest=/tmp/nginx.conf state=link"
----bash
+```
 
 ### Модуль copy
 
-+++bash
+```bash
 # Копирование файла
 ansible all -m copy -a "src=/local/file.txt dest=/remote/file.txt"
 
@@ -253,17 +253,17 @@ ansible all -m copy -a "src=/local/file.txt dest=/remote/file.txt owner=ubuntu g
 
 # Создание файла с содержимым
 ansible all -m copy -a "content='Hello World' dest=/tmp/hello.txt"
----bash
+```
 
 ### Модуль template
 
-+++bash
+```bash
 # Использование шаблонов (требует Jinja2)
 ansible all -m template -a "src=/local/template.j2 dest=/remote/config.conf"
 
 # Шаблон с переменными
 ansible all -m template -a "src=nginx.conf.j2 dest=/etc/nginx/nginx.conf" -e "port=8080"
----bash
+```
 
 ---
 
@@ -276,7 +276,7 @@ ansible all -m template -a "src=nginx.conf.j2 dest=/etc/nginx/nginx.conf" -e "po
 
 ### Модуль user
 
-+++bash
+```bash
 # Создание пользователя
 ansible all -m user -a "name=deploy state=present"
 
@@ -291,11 +291,11 @@ ansible all -m user -a "name=deploy state=absent"
 
 # Изменение пароля
 ansible all -m user -a "name=deploy password={{ 'mypassword' | password_hash('sha512') }}"
----bash
+```
 
 ### Модуль group
 
-+++bash
+```bash
 # Создание группы
 ansible all -m group -a "name=developers state=present"
 
@@ -304,7 +304,7 @@ ansible all -m group -a "name=developers state=present gid=1001"
 
 # Удаление группы
 ansible all -m group -a "name=developers state=absent"
----bash
+```
 
 ---
 
@@ -317,7 +317,7 @@ ansible all -m group -a "name=developers state=absent"
 
 ### Модуль uri
 
-+++bash
+```bash
 # HTTP запросы
 ansible all -m uri -a "url=http://localhost:8080/health return_content=yes"
 
@@ -326,11 +326,11 @@ ansible all -m uri -a "url=http://api.example.com/data method=POST body='{\"key\
 
 # Проверка доступности API
 ansible all -m uri -a "url=https://api.github.com status_code=200"
----bash
+```
 
 ### Модуль get_url
 
-+++bash
+```bash
 # Скачивание файлов
 ansible all -m get_url -a "url=https://example.com/file.tar.gz dest=/tmp/file.tar.gz"
 
@@ -339,7 +339,7 @@ ansible all -m get_url -a "url=https://example.com/file.tar.gz dest=/tmp/file.ta
 
 # Скачивание с заголовками
 ansible all -m get_url -a "url=https://api.example.com/data dest=/tmp/data.json headers='Authorization: Bearer token'"
----bash
+```
 
 ---
 
@@ -352,7 +352,7 @@ ansible all -m get_url -a "url=https://api.example.com/data dest=/tmp/data.json 
 
 ### Модуль debug
 
-+++bash
+```bash
 # Вывод переменных
 ansible all -m debug -a "var=ansible_distribution"
 
@@ -361,11 +361,11 @@ ansible all -m debug -a "msg='Hello from {{ inventory_hostname }}'"
 
 # Вывод фактов
 ansible all -m debug -a "var=ansible_facts"
----bash
+```
 
 ### Модуль stat
 
-+++bash
+```bash
 # Проверка существования файла
 ansible all -m stat -a "path=/etc/nginx/nginx.conf"
 
@@ -374,11 +374,11 @@ ansible all -m stat -a "path=/var/www"
 
 # Получение информации о файле
 ansible all -m stat -a "path=/etc/passwd"
----bash
+```
 
 ### Модуль wait_for
 
-+++bash
+```bash
 # Ожидание доступности порта
 ansible all -m wait_for -a "port=80 host=localhost"
 
@@ -387,7 +387,7 @@ ansible all -m wait_for -a "path=/tmp/ready timeout=30"
 
 # Ожидание с проверкой содержимого
 ansible all -m wait_for -a "path=/tmp/ready search_regex=ready"
----bash
+```
 
 ---
 
@@ -400,7 +400,7 @@ ansible all -m wait_for -a "path=/tmp/ready search_regex=ready"
 
 ### Параллельное выполнение
 
-+++bash
+```bash
 # Ограничение количества параллельных процессов
 ansible all -m ping --forks=5
 
@@ -409,11 +409,11 @@ ansible all -m ping --forks=1
 
 # Выполнение с задержкой между хостами
 ansible all -m ping --forks=1 --serial=1
----bash
+```
 
 ### Фильтрация хостов
 
-+++bash
+```bash
 # Выполнение на конкретном хосте
 ansible web1 -m ping
 
@@ -425,27 +425,27 @@ ansible "web*" -m ping
 
 # Исключение хостов
 ansible all:!db_servers -m ping
----bash
+```
 
 ### Verbose режим
 
-+++bash
+```bash
 # Разные уровни детализации
 ansible all -m ping -v    # -v
 ansible all -m ping -vv   # -vv
 ansible all -m ping -vvv  # -vvv
 ansible all -m ping -vvvv # -vvvv (максимальная детализация)
----bash
+```
 
 ### Проверка без выполнения
 
-+++bash
+```bash
 # Режим проверки (dry-run)
 ansible all -m package -a "name=nginx state=present" --check
 
 # Режим проверки с diff
 ansible all -m copy -a "src=/local/file.txt dest=/remote/file.txt" --check --diff
----bash
+```
 
 ---
 

@@ -66,13 +66,13 @@ roles/
 
 ### Создание роли
 
-+++bash
+```bash
 # Создание роли через ansible-galaxy
 ansible-galaxy init nginx
 
 # Создание роли вручную
 mkdir -p roles/nginx/{defaults,files,handlers,meta,tasks,templates,tests,vars}
----bash
+```
 
 ### Основные файлы роли
 
