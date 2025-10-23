@@ -21,7 +21,7 @@
 - **API** - программный интерфейс  
 - **kubectl** - инструмент командной строки
 
-<img src="img/k8s_cluster_scheme.png" alt="k8s_cluster_scheme" width="700">
+<img src="../img/k8s_cluster_scheme.png" alt="k8s_cluster_scheme" width="700">
 
 ---
 

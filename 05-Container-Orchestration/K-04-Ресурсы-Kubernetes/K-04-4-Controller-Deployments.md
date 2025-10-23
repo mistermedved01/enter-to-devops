@@ -10,7 +10,7 @@
 
 ---
 
-<img src="img/k8s_deployments.jpg" alt="" width="700">
+<img src="../img/k8s_deployments.jpg" alt="" width="700">
 
 Deployment предоставляет **декларативное обновление** для Pod'ов и ReplicaSets. Достаточно описать желаемое состояние, а контроллер развертывания изменит текущее состояние на желаемое.
 

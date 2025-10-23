@@ -14,7 +14,7 @@
 
 ### Проблемы микросервисной архитектуры
 
-<img src="img/k8s_cluster_ip_01.jpg" alt="" width="700">
+<img src="../img/k8s_cluster_ip_01.jpg" alt="" width="700">
 
 ```text
 # Без ClusterIP - хрупкие связи между микросервисами

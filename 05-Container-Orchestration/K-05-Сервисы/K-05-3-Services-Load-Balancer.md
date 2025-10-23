@@ -12,7 +12,7 @@
 
 ---
 
-<img src="img/k8s_services_lb_01.jpg" alt="" width="700">
+<img src="../img/k8s_services_lb_01.jpg" alt="" width="700">
 
 ### Ограничения NodePort во внешнем доступе
 

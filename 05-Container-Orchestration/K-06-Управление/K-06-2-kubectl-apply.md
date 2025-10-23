@@ -14,7 +14,7 @@
 
 ## Как работает команда apply внутри
 
-<img src="img/k8s_kubectl_apply_01.jpg" alt="" width="700">
+<img src="../img/k8s_kubectl_apply_01.jpg" alt="" width="700">
 
 ```text
 # kubectl apply использует 3 конфигурации:
