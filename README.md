@@ -1,4 +1,4 @@
-# 🚀 Enter to DevOps
+# 🚀Enter to DevOps
 
 ## Структурированные материалы для входа в DevOps
 
@@ -10,7 +10,11 @@
 
 ---
 
-## 📚 Содержание:
+# 🎯Labs-and-Practice
+
+- [**TASK-01: Flask ToDo Application Deployment**](00-Labs-and-Practice/TASK-01/README.md)
+
+---
 
 # 🐧Linux
 
@@ -160,11 +164,11 @@
 
 # 🌐Network
 
-- [N-01-1-Сетевые-модели-OSI-TCP-IP-UDP](02-Network/N-01-1-Сетевые-модели-OSI-TCP-IP-UDP.md)
-- [N-01-2-IP-адресация-и-подсети](02-Network/N-01-2-IP-адресация-и-подсети.md)
-- [N-01-3-Маршрутизация-и-шлюз](02-Network/N-01-3-Маршрутизация-и-шлюз.md)
-- [N-01-4-DHCP-DNS-NAT](02-Network/N-01-4-DHCP-DNS-NAT.md)
-- [N-01-5-VPN-и-Proxy](02-Network/N-01-5-VPN-и-Proxy.md)
+- [**N-01-1-Сетевые-модели-OSI-TCP-IP-UDP**](02-Network/N-01-1-Сетевые-модели-OSI-TCP-IP-UDP.md)
+- [**N-01-2-IP-адресация-и-подсети**](02-Network/N-01-2-IP-адресация-и-подсети.md)
+- [**N-01-3-Маршрутизация-и-шлюз**](02-Network/N-01-3-Маршрутизация-и-шлюз.md)
+- [**N-01-4-DHCP-DNS-NAT**](02-Network/N-01-4-DHCP-DNS-NAT.md)
+- [**N-01-5-VPN-и-Proxy**](02-Network/N-01-5-VPN-и-Proxy.md)
 
 ---
 
@@ -223,7 +227,7 @@
 
 ---
 
-# 🔧 Configuration-Management
+# 🔧Configuration-Management
 
 <details>
 <summary><strong>A-01-Basics</strong></summary>
