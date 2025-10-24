@@ -12,6 +12,39 @@
 
 ## 📚 Содержание:
 
+# 🎯 Labs and Practice
+
+**[→ Практические задания по всем темам](00-Labs-and-Practice/)**
+
+<details>
+<summary><strong>🟢 Easy - Базовый уровень</strong></summary>
+
+- Время: 30-60 минут
+- Технологии: 2-3
+- [Перейти к Easy заданиям](00-Labs-and-Practice/Easy/)
+
+</details>
+
+<details>
+<summary><strong>🟡 Medium - Средний уровень</strong></summary>
+
+- Время: 1-2 часа
+- Технологии: 3-4
+- [Перейти к Medium заданиям](00-Labs-and-Practice/Medium/)
+
+</details>
+
+<details>
+<summary><strong>🔴 Hard - Продвинутый уровень</strong></summary>
+
+- Время: 2-4 часа
+- Технологии: 4+
+- [Перейти к Hard заданиям](00-Labs-and-Practice/Hard/)
+
+</details>
+
+---
+
 # 🐧 Linux
 
 <details>
@@ -290,7 +323,7 @@
 </details>
 
 <details>
-<summary><strong>🏗️K-01-Архитектура Kubernetes</strong></summary>
+<summary><strong>🏗️K-01-Архитектура-Kubernetes</strong></summary>
 
 - [K-01-1-Architecture-Kubernetes](05-Container-Orchestration/K-01-Архитектура-Kubernetes/K-01-1-Architecture-Kubernetes.md)
 - [K-01-2-Component-Container-Runtime](05-Container-Orchestration/K-01-Архитектура-Kubernetes/K-01-2-Component-Container-Runtime.md)
@@ -298,7 +331,7 @@
 </details>
 
 <details>
-<summary><strong>🎛️K-02-Master компоненты</strong></summary>
+<summary><strong>🎛️K-02-Master-компоненты</strong></summary>
 
 - [K-02-1-Master-Component-ETCD](05-Container-Orchestration/K-02-Master-компоненты/K-02-1-Master-Component-ETCD.md)
 - [K-02-2-Master-Component-Kube-API-Server](05-Container-Orchestration/K-02-Master-компоненты/K-02-2-Master-Component-Kube-API-Server.md)
@@ -308,7 +341,7 @@
 </details>
 
 <details>
-<summary><strong>⚙️K-03-Worker компоненты</strong></summary>
+<summary><strong>⚙️K-03-Worker-компоненты</strong></summary>
 
 - [K-03-1-Worker-Component-Kubelet](05-Container-Orchestration/K-03-Worker-компоненты/K-03-1-Worker-Component-Kubelet.md)
 - [K-03-2-Worker-Component-Kube-Proxy](05-Container-Orchestration/K-03-Worker-компоненты/K-03-2-Worker-Component-Kube-Proxy.md)
@@ -316,7 +349,7 @@
 </details>
 
 <details>
-<summary><strong>📦K-04-Ресурсы Kubernetes</strong></summary>
+<summary><strong>📦K-04-Ресурсы-Kubernetes</strong></summary>
 
 - [K-04-1-Resource-Pods](05-Container-Orchestration/K-04-Ресурсы-Kubernetes/K-04-1-Resource-Pods.md)
 - [K-04-2-Resource-Kubernetes-YAML](05-Container-Orchestration/K-04-Ресурсы-Kubernetes/K-04-2-Resource-Kubernetes-YAML.md)
