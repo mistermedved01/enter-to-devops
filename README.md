@@ -351,6 +351,7 @@
 <summary><strong>K-07-Планирование-и-ресурсы</strong></summary>
 
 - [K-07-1-Manual-Scheduling](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-1-Manual-Scheduling.md)
+- [K-07-2-Labels-and-Selectors](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-2-Labels-and-Selectors.md)
 
 </details>
 
