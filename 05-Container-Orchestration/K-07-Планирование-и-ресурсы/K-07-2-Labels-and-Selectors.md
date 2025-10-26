@@ -430,7 +430,7 @@ kind: ReplicaSet
 metadata:
   name: web-rs
   labels:
-    app: web-rs          # Метки ReplicaSet
+    app: web-app         # Метки ReplicaSet (одинаково с Pod'ами)
     managed-by: kubectl
 spec:
   replicas: 3
