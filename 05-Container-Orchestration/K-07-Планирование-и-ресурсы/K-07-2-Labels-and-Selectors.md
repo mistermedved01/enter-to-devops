@@ -279,7 +279,8 @@ kind: ReplicaSet
 metadata:
   name: nginx-replicaset
   labels:
-    app: nginx-rs        # Метки самого ReplicaSet
+    app: nginx           # Метки самого ReplicaSet (одинаково с Pod'ами)
+    component: replicaset # Дополнительная метка ReplicaSet
 spec:
   replicas: 3
   selector:
@@ -357,7 +358,8 @@ kind: ReplicaSet
 metadata:
   name: nginx-replicaset
   labels:
-    app: nginx-rs        # ← Метки САМОГО ReplicaSet
+    app: nginx           # ← Метки САМОГО ReplicaSet (одинаково с Pod'ами)
+    component: replicaset # ← Дополнительная метка ReplicaSet
     managed-by: helm     # ← Кто ищет этот ReplicaSet
 spec:
   selector:
@@ -371,8 +373,8 @@ spec:
 ```
 
 **Кто использует какие метки:**
-- **Верхние метки** (`app: nginx-rs`) - когда кто-то ищет **этот ReplicaSet**
-- **Нижние метки** (`app: nginx`) - когда **ReplicaSet ищет свои Pod'ы**
+- **Верхние метки** (`app: nginx`, `component: replicaset`) - когда кто-то ищет **этот ReplicaSet**
+- **Нижние метки** (`app: nginx`, `tier: frontend`) - когда **ReplicaSet ищет свои Pod'ы**
 
 > ⚠️ **Частая ошибка:** Путают метки ReplicaSet и метки Pod'ов. Селектор должен соответствовать меткам в `template.metadata.labels`!
 
