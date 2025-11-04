@@ -353,6 +353,12 @@
 - [K-07-1-Manual-Scheduling](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-1-Manual-Scheduling.md)
 - [K-07-2-Labels-and-Selectors](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-2-Labels-and-Selectors.md)
 - [K-07-3-Taints-and-Tolerations](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-3-Taints-and-Tolerations.md)
+- [K-07-4-Node-Selectors](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-4-Node-Selectors.md)
+- [K-07-5-Node-Affinity](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-5-Node-Affinity.md)
+- [K-07-6-Taints-and-Tolerations-Node-Affinity](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-6-Taints-and-Tolerations-Node-Affinity.md)
+- [K-07-7-Resource-Requirements-and-Limits](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-7-Resource-Requirements-and-Limits.md)
+- [K-07-8-DaemonSets](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-8-DaemonSets.md)
+- [K-07-9-Static-Pods](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-9-Static-Pods.md)
 
 </details>
 
