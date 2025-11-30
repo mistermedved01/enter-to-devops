@@ -298,6 +298,7 @@
 
 - [K-01-1-Architecture-Kubernetes](05-Container-Orchestration/K-01-Архитектура-Kubernetes/K-01-1-Architecture-Kubernetes.md)
 - [K-01-2-Component-Container-Runtime](05-Container-Orchestration/K-01-Архитектура-Kubernetes/K-01-2-Component-Container-Runtime.md)
+- [K-01-3-Example-Simple-App](05-Container-Orchestration/K-01-Архитектура-Kubernetes/K-01-3-Example-Simple-App.md)
 
 </details>
 
@@ -359,6 +360,29 @@
 - [K-07-7-Resource-Requirements-and-Limits](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-7-Resource-Requirements-and-Limits.md)
 - [K-07-8-DaemonSets](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-8-DaemonSets.md)
 - [K-07-9-Static-Pods](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-9-Static-Pods.md)
+- [K-07-10-Priority-Classes](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-10-Priority-Classes.md)
+- [K-07-11-Multiple-Schedulers](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-11-Multiple-Schedulers.md)
+- [K-07-12-Admission-Controllers](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-12-Admission-Controllers.md)
+- [K-07-13-Admission-Controller-Types](05-Container-Orchestration/K-07-Планирование-и-ресурсы/K-07-13-Admission-Controller-Types.md)
+
+</details>
+
+<details>
+<summary><strong>K-08-Мониторинг</strong></summary>
+
+- [K-08-1-Monitoring-Cluster-Components](05-Container-Orchestration/K-08-Мониторинг/K-08-1-Monitoring-Cluster-Components.md)
+- [K-08-2-Managing-Application-Logs](05-Container-Orchestration/K-08-Мониторинг/K-08-2-Managing-Application-Logs.md)
+
+</details>
+
+<details>
+<summary><strong>K-09-Жизненный-цикл-приложений</strong></summary>
+
+- [K-09-1-Rolling-Updates-and-Rollbacks](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-1-Rolling-Updates-and-Rollbacks.md)
+- [K-09-2-Command-and-Arguments-Docker](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-2-Command-and-Arguments-Docker.md)
+- [K-09-3-Command-and-Arguments-k8s](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-3-Command-and-Arguments-k8s.md)
+- [K-09-4-Environment-Variables-in-Applications](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-4-Environment-Variables-in-Applications.md)
+- [K-09-5-Configure-ConfigMaps-in-Applications](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-5-Configure-ConfigMaps-in-Applications.md)
 
 </details>
 
