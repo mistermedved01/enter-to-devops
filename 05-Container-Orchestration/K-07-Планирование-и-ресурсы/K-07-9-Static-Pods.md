@@ -963,10 +963,9 @@ systemctl status kubelet
 
 </details>
 
-<details>
-<summary><b>📚Резюме</b></summary>
-
 ---
+
+## Резюме
 
 ✅ **Static Pods** — Pod'ы, созданные kubelet напрямую из файлов манифестов без участия API-сервера
 
@@ -997,5 +996,3 @@ systemctl status kubelet
 - Мониторьте логи kubelet
 
 ---
-
-</details>
