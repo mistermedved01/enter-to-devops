@@ -383,8 +383,33 @@
 - [K-09-3-Command-and-Arguments-k8s](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-3-Command-and-Arguments-k8s.md)
 - [K-09-4-Environment-Variables-in-Applications](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-4-Environment-Variables-in-Applications.md)
 - [K-09-5-Configure-ConfigMaps-in-Applications](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-5-Configure-ConfigMaps-in-Applications.md)
+- [K-09-6-Configure-Secrets-in-Applications](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-6-Configure-Secrets-in-Applications.md)
+- [K-09-7-Multi-Container-PODs](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-7-Multi-Container-PODs.md)
+- [K-09-8-Init-Containers](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-8-Init-Containers.md)
+- [K-09-9-Self-Healing-Apps](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-9-Self-Healing-Apps.md)
+- [K-09-10-Autoscaling-Benefits](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-10-Autoscaling-Benefits.md)
+- [K-09-11-HPA-Architecture](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-11-HPA-Architecture.md)
 
 </details>
+
+<details>
+<summary><strong>K-12-Хранение</strong></summary>
+
+- [K-12-1-Enter-Container-Storage](05-Container-Orchestration/K-12-Хранение/K-12-1-Enter-Container-Storage.md)
+- [K-12-2-Storage-in-Docker](05-Container-Orchestration/K-12-Хранение/K-12-2-Storage-in-Docker.md)
+- [K-12-3-Volume-Driver-Plugins-in-Docker](05-Container-Orchestration/K-12-Хранение/K-12-3-Volume-Driver-Plugins-in-Docker.md)
+- [K-12-4-CSI](05-Container-Orchestration/K-12-Хранение/K-12-4-CSI.md)
+- [K-12-5-Volumes](05-Container-Orchestration/K-12-Хранение/K-12-5-Volumes.md)
+- [K-12-6-Persistent-Volumes](05-Container-Orchestration/K-12-Хранение/K-12-6-Persistent-Volumes.md)
+- [K-12-7-Persistent-Volume-Claims](05-Container-Orchestration/K-12-Хранение/K-12-7-Persistent-Volume-Claims.md)
+
+</details>
+
+---
+
+# ☁️S3
+
+- [S-00-S3-Basics](06-S3/S-00-S3-Basics.md)
 
 ---
 
