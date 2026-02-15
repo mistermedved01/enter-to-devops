@@ -694,5 +694,34 @@ Cluster Autoscaler позволяет принимать и удалять ра�
 
 ---
 
-Теперь должно стать понятнее, в чем важность масштабирования в Kubernetes и какие есть подходы. Это все, увидимся в следующем видео.
+## Связанные темы
+
+- **[K-09-1-Rolling-Updates-and-Rollbacks](K-09-1-Rolling-Updates-and-Rollbacks.md)** — обновления и откаты
+- **[K-09-2-Command-and-Arguments-Docker](K-09-2-Command-and-Arguments-Docker.md)** — команды и аргументы в Docker контейнерах
+- **[K-09-3-Command-and-Arguments-k8s](K-09-3-Command-and-Arguments-k8s.md)** — команды и аргументы в Kubernetes Pod
+- **[K-09-4-Environment-Variables-in-Applications](K-09-4-Environment-Variables-in-Applications.md)** — переменные среды в приложениях
+- **[K-09-5-Configure-ConfigMaps-in-Applications](K-09-5-Configure-ConfigMaps-in-Applications.md)** — настройка ConfigMaps в приложениях
+- **[K-09-6-Configure-Secrets-in-Applications](K-09-6-Configure-Secrets-in-Applications.md)** — настройка Secrets в приложениях
+- **[K-09-7-Multi-Container-PODs](K-09-7-Multi-Container-PODs.md)** — мультиконтейнерные Pod
+- **[K-09-8-Init-Containers](K-09-8-Init-Containers.md)** — Init контейнеры
+- **[K-09-9-Self-Healing-Apps](K-09-9-Self-Healing-Apps.md)** — самовосстанавливающиеся приложения
+- **[K-09-10-Autoscaling-Benefits](K-09-10-Autoscaling-Benefits.md)** — преимущества автоматического масштабирования **← Текущая тема**
+- **[K-09-11-HPA-Architecture](K-09-11-HPA-Architecture.md)** — архитектура Horizontal Pod Autoscaler
+- **[K-09-12-VPA-Architecture](K-09-12-VPA-Architecture.md)** — архитектура Vertical Pod Autoscaler
+- **[K-09-13-Pod-In-Place-Resize](K-09-13-Pod-In-Place-Resize.md)** — изменение размера Pod на месте
+
+---
+
+## Что дальше?
+
+В следующей теме [K-09-11-HPA-Architecture](K-09-11-HPA-Architecture.md) мы рассмотрим архитектуру Horizontal Pod Autoscaler, изучим компоненты HPA, типы метрик и механизмы горизонтального масштабирования приложений.
+
+---
+---
+
+## Что дальше?
+
+В следующей теме [K-09-11-HPA-Architecture](K-09-11-HPA-Architecture.md) мы рассмотрим архитектуру Horizontal Pod Autoscaler, изучим компоненты HPA, типы метрик и механизмы горизонтального масштабирования приложений.
+
+---
 
