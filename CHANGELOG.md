@@ -1,4 +1,4 @@
-﻿# Changelog
+# Changelog
 
 Все изменения в проекте документируются в этом файле.
 ## [15-01-2026]
@@ -22,35 +22,11 @@
 
 Добавлено:
 - 05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-12-VPA-Architecture.md
-
-## [15-02-2026]
-
-Добавлено:
 - 05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-13-Pod-In-Place-Resize.md
-
-## [15-02-2026]
-
-Добавлено:
 - 05-Container-Orchestration/K-10-Техобслуживание/K-10-1-OS-Upgrades.md
-
-## [15-02-2026]
-
-Добавлено:
 - 05-Container-Orchestration/K-10-Техобслуживание/K-10-2-K8s-Software-Versions.md
-
-## [15-02-2026]
-
-Добавлено:
 - 05-Container-Orchestration/K-10-Техобслуживание/K-10-3-Cluster-Upgrade-Process.md
-
-## [15-02-2026]
-
-Добавлено:
 - 05-Container-Orchestration/K-10-Техобслуживание/K-10-4-Backup-and-Restore-Methods.md
-
-## [15-02-2026]
-
-Добавлено:
 - 05-Container-Orchestration/K-12-Хранение/K-12-8-Storage-Classes.md
 
 ---
