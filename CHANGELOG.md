@@ -28,4 +28,9 @@
 Добавлено:
 - 05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-13-Pod-In-Place-Resize.md
 
+## [15-02-2026]
+
+Добавлено:
+- 05-Container-Orchestration/K-10-Техобслуживание/K-10-1-OS-Upgrades.md
+
 ---
