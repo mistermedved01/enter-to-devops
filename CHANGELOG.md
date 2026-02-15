@@ -48,4 +48,9 @@
 Добавлено:
 - 05-Container-Orchestration/K-10-Техобслуживание/K-10-4-Backup-and-Restore-Methods.md
 
+## [15-02-2026]
+
+Добавлено:
+- 05-Container-Orchestration/K-12-Хранение/K-12-8-Storage-Classes.md
+
 ---
