@@ -389,6 +389,18 @@
 - [K-09-9-Self-Healing-Apps](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-9-Self-Healing-Apps.md)
 - [K-09-10-Autoscaling-Benefits](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-10-Autoscaling-Benefits.md)
 - [K-09-11-HPA-Architecture](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-11-HPA-Architecture.md)
+- [K-09-12-VPA-Architecture](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-12-VPA-Architecture.md)
+- [K-09-13-Pod-In-Place-Resize](05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-13-Pod-In-Place-Resize.md)
+
+</details>
+
+<details>
+<summary><strong>K-10-Техобслуживание</strong></summary>
+
+- [K-10-1-OS-Upgrades](05-Container-Orchestration/K-10-Техобслуживание/K-10-1-OS-Upgrades.md)
+- [K-10-2-K8s-Software-Versions](05-Container-Orchestration/K-10-Техобслуживание/K-10-2-K8s-Software-Versions.md)
+- [K-10-3-Cluster-Upgrade-Process](05-Container-Orchestration/K-10-Техобслуживание/K-10-3-Cluster-Upgrade-Process.md)
+- [K-10-4-Backup-and-Restore-Methods](05-Container-Orchestration/K-10-Техобслуживание/K-10-4-Backup-and-Restore-Methods.md)
 
 </details>
 
@@ -402,14 +414,9 @@
 - [K-12-5-Volumes](05-Container-Orchestration/K-12-Хранение/K-12-5-Volumes.md)
 - [K-12-6-Persistent-Volumes](05-Container-Orchestration/K-12-Хранение/K-12-6-Persistent-Volumes.md)
 - [K-12-7-Persistent-Volume-Claims](05-Container-Orchestration/K-12-Хранение/K-12-7-Persistent-Volume-Claims.md)
+- [K-12-8-Storage-Classes](05-Container-Orchestration/K-12-Хранение/K-12-8-Storage-Classes.md)
 
 </details>
-
----
-
-# ☁️S3
-
-- [S-00-S3-Basics](06-S3/S-00-S3-Basics.md)
 
 ---
 
