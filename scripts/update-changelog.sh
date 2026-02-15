@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Скрипт для автоматического обновления CHANGELOG.md
-# Определяет новые и измененные .md файлы в staged area и добавляет их в CHANGELOG
+# Определяет новые .md файлы в staged area и добавляет их в CHANGELOG
 # Группирует записи по датам коммитов
 # Используется в pre-commit hook для автоматического добавления CHANGELOG.md в коммит
 
@@ -12,9 +12,6 @@ cd "$REPO_ROOT" || exit 1
 # Получаем список новых .md файлов из staged area
 # Используем -z для null-terminated строк, чтобы правильно обрабатывать пути с пробелами и спецсимволами
 NEW_FILES=$(git diff --cached --diff-filter=A --name-only -z 2>/dev/null | tr '\0' '\n' | grep -E '\.md$' || echo "")
-
-# Получаем список измененных .md файлов из staged area
-MODIFIED_FILES=$(git diff --cached --diff-filter=M --name-only -z 2>/dev/null | tr '\0' '\n' | grep -E '\.md$' || echo "")
 
 # Убираем пустые строки и нормализуем
 # Используем простую проверку вместо sed/grep с [[:space:]] для избежания ошибок
@@ -27,50 +24,18 @@ else
     NEW_FILES=""
 fi
 
-if [ -n "$MODIFIED_FILES" ]; then
-    # Убираем пустые строки простым способом
-    MODIFIED_FILES=$(printf '%s\n' "$MODIFIED_FILES" | awk 'NF > 0' || echo "")
-    # Если результат пустой, устанавливаем пустую строку
-    [ -z "$MODIFIED_FILES" ] && MODIFIED_FILES=""
-else
-    MODIFIED_FILES=""
-fi
-
-# Если нет новых и измененных файлов, выходим
-if [ -z "$NEW_FILES" ] && [ -z "$MODIFIED_FILES" ]; then
+# Если нет новых файлов, выходим
+if [ -z "$NEW_FILES" ]; then
     exit 0
 fi
 
 # Получаем текущую дату в формате [день-месяц-год] (для pre-commit используем текущую дату, а не дату коммита)
 COMMIT_DATE=$(date +%d-%m-%Y)
 
-# Создаем временные файлы для записей
-TEMP_FILE_MODIFIED=$(mktemp)
-TEMP_FILE_ADDED=$(mktemp)
+# Создаем временный файл для записей
+TEMP_FILE=$(mktemp)
 
-# Обрабатываем каждый измененный файл (сначала)
-if [ -n "$MODIFIED_FILES" ]; then
-    # Используем процесс подстановки вместо pipe, чтобы избежать проблем с подпроцессами
-    while IFS= read -r file || [ -n "$file" ]; do
-        # Пропускаем пустые строки
-        [ -z "$file" ] && continue
-        
-        # Пропускаем сам CHANGELOG.md и скрипты
-        if [ "$file" = "CHANGELOG.md" ] || [ "$file" = "scripts/update-changelog.sh" ]; then
-            continue
-        fi
-        
-        # Пропускаем файлы, которые не .md
-        if [[ ! "$file" =~ \.md$ ]]; then
-            continue
-        fi
-        
-        # Добавляем запись для измененного файла (только путь)
-        echo "- $file" >> "$TEMP_FILE_MODIFIED"
-    done <<< "$MODIFIED_FILES"
-fi
-
-# Обрабатываем каждый новый файл (потом)
+# Обрабатываем каждый новый файл
 if [ -n "$NEW_FILES" ]; then
     # Используем процесс подстановки вместо pipe, чтобы избежать проблем с подпроцессами
     while IFS= read -r file || [ -n "$file" ]; do
@@ -88,28 +53,17 @@ if [ -n "$NEW_FILES" ]; then
         fi
         
         # Добавляем запись для нового файла (только путь)
-        echo "- $file" >> "$TEMP_FILE_ADDED"
+        echo "- $file" >> "$TEMP_FILE"
     done <<< "$NEW_FILES"
+    
+    # Добавляем заголовок "Добавлено:"
+    if [ -s "$TEMP_FILE" ]; then
+        {
+            echo "Добавлено:"
+            cat "$TEMP_FILE"
+        } > "${TEMP_FILE}.tmp" && mv "${TEMP_FILE}.tmp" "$TEMP_FILE"
+    fi
 fi
-
-# Объединяем записи: сначала измененные, потом добавленные, с разделителем
-TEMP_FILE=$(mktemp)
-if [ -s "$TEMP_FILE_MODIFIED" ]; then
-    echo "Изменено:" >> "$TEMP_FILE"
-    cat "$TEMP_FILE_MODIFIED" >> "$TEMP_FILE"
-fi
-if [ -s "$TEMP_FILE_MODIFIED" ] && [ -s "$TEMP_FILE_ADDED" ]; then
-    echo "" >> "$TEMP_FILE"
-    echo "---" >> "$TEMP_FILE"
-    echo "" >> "$TEMP_FILE"
-fi
-if [ -s "$TEMP_FILE_ADDED" ]; then
-    echo "Добавлено:" >> "$TEMP_FILE"
-    cat "$TEMP_FILE_ADDED" >> "$TEMP_FILE"
-fi
-
-# Удаляем временные файлы
-rm -f "$TEMP_FILE_MODIFIED" "$TEMP_FILE_ADDED"
 
 # Если есть новые записи, добавляем их в CHANGELOG
 if [ -s "$TEMP_FILE" ]; then
