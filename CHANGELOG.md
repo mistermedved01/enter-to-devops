@@ -43,4 +43,9 @@
 Добавлено:
 - 05-Container-Orchestration/K-10-Техобслуживание/K-10-3-Cluster-Upgrade-Process.md
 
+## [15-02-2026]
+
+Добавлено:
+- 05-Container-Orchestration/K-10-Техобслуживание/K-10-4-Backup-and-Restore-Methods.md
+
 ---
