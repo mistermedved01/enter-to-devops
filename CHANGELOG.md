@@ -3,21 +3,6 @@
 Все изменения в проекте документируются в этом файле.
 ## [15-01-2026]
 
-Изменено:
-- 00-Labs-and-Practice/TASK-01/README.md
-- 02-Network/N-01-1-Сетевые-модели-OSI-TCP-IP-UDP.md
-- 05-Container-Orchestration/K-00-Установка-и-настройка/K-00-0-Setup-Kubernetes.md
-- 05-Container-Orchestration/K-05-Сервисы/K-05-1-Services-NodePort.md
-- 05-Container-Orchestration/K-05-Сервисы/K-05-2-Services-ClusterIP.md
-- 05-Container-Orchestration/K-05-Сервисы/K-05-3-Services-Load-Balancer.md
-- 05-Container-Orchestration/K-08-Мониторинг/K-08-1-Monitoring-Cluster-Components.md
-- 05-Container-Orchestration/K-08-Мониторинг/K-08-2-Managing-Application-Logs.md
-- 05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-3-Command-and-Arguments-k8s.md
-- 05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-5-Configure-ConfigMaps-in-Applications.md
-- README.md
-
----
-
 Добавлено:
 - 05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-10-Autoscaling-Benefits.md
 - 05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-11-HPA-Architecture.md
@@ -32,5 +17,10 @@
 - 05-Container-Orchestration/K-12-Хранение/K-12-5-Volumes.md
 - 05-Container-Orchestration/K-12-Хранение/K-12-6-Persistent-Volumes.md
 - 05-Container-Orchestration/K-12-Хранение/K-12-7-Persistent-Volume-Claims.md
+
+## [15-02-2026]
+
+Добавлено:
+- 05-Container-Orchestration/K-09-Жизненный-цикл-приложений/K-09-12-VPA-Architecture.md
 
 ---
