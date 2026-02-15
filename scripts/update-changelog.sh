@@ -78,24 +78,29 @@ if [ -s "$TEMP_FILE" ]; then
 EOF
     fi
     
-    # Читаем новые записи
+    # Читаем новые записи (полный блок "Добавлено:" + список файлов)
     NEW_ENTRIES=$(cat "$TEMP_FILE")
+    # Только строки с путями файлов — для добавления в существующую секцию даты
+    FILE_LINES_FILE="${TEMP_FILE}.lines"
+    grep '^- ' "$TEMP_FILE" > "$FILE_LINES_FILE" 2>/dev/null || true
     
     # Проверяем, есть ли раздел с текущей датой
     DATE_SECTION="## [$COMMIT_DATE]"
     
     if grep -q "^$DATE_SECTION" "$CHANGELOG_FILE"; then
-        # Если раздел с датой уже существует, добавляем записи в него
-        awk -v date_section="$DATE_SECTION" -v new_entries="$NEW_ENTRIES" '
-            $0 == date_section { 
+        # Если раздел с датой уже есть — дописываем только новые файлы (одна дата — один блок "Добавлено:")
+        awk -v date_section="$DATE_SECTION" -v lines_file="$FILE_LINES_FILE" '
+            $0 == date_section { in_section=1; print; next }
+            in_section && /^---$/ {
+                while ((getline l < lines_file) > 0) print l
+                close(lines_file)
+                in_section=0
                 print
-                getline
-                if ($0 != "") print
-                print new_entries
                 next
             }
             { print }
         ' "$CHANGELOG_FILE" > "${CHANGELOG_FILE}.tmp" && mv "${CHANGELOG_FILE}.tmp" "$CHANGELOG_FILE"
+        rm -f "$FILE_LINES_FILE"
     else
         # Если раздела с датой нет, создаем его перед "---"
         if grep -q "^---$" "$CHANGELOG_FILE"; then
