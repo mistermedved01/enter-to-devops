@@ -33,4 +33,9 @@
 Добавлено:
 - 05-Container-Orchestration/K-10-Техобслуживание/K-10-1-OS-Upgrades.md
 
+## [15-02-2026]
+
+Добавлено:
+- 05-Container-Orchestration/K-10-Техобслуживание/K-10-2-K8s-Software-Versions.md
+
 ---
